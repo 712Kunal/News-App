@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Updates</title>
+
+    <meta property="description" content="Welcome to my online news portal, your one-stop destination for staying informed about the latest happenings around the globe. Our website is designed to provide you with comprehensive coverage of news, ranging from local events to global affairs, all conveniently accessible at your fingertips." />
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="Global Updates">
+    <meta property="og:title" content="GLOBAL UPDATES">
+    <meta property="og:description" content="Welcome to my online news portal, your one-stop destination for staying informed about the latest happenings around the globe. Our website is designed to provide you with comprehensive coverage of news, ranging from local events to global affairs, all conveniently accessible at your fingertips." />
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="main-nav  flex">
+            <a href="#" class="company-logo">
+                <img src="./assets/logo black.png" alt="logo">
+            </a>
+  
+            <nav class="nav-links">
+                <ul class="flex" id="nav-links">
+                    <li><a href="#cards-container" id="nav-click-world" class="hover-links"
+                            onclick="onNavitemClick('world')">Home</a></li>
+                    <li><a href="#cards-container" id="nav-click-technology" class="hover-links"
+                            onclick="onNavitemClick('technology')">Technology</a></li>
+                    <li><a href="#cards-container" id="nav-click-sports" class="hover-links"
+                            onclick="onNavitemClick('sports')">Sports</a></li>
+                    <li><a href="#cards-container" id="nav-click-politics" class="hover-links"
+                            onclick="onNavitemClick('politics')">Politics</a></li>
+                    <li><a href="#cards-container" id="nav-click-finance" class="hover-links"
+                            onclick="onNavitemClick('finance')">Finance</a></li>
+
+                    <li>
+                        <div class="search-bar">
+                            <input id="newsToBeSearched" type="text" placeholder="eg. Science" required>
+                            <a href="#cards-container"> <button id="search-button" class="search-button">Search</button></a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="nav-toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+        </div>
+    </nav>
+
+
+
+    <section class="parallax">
+        <img src="./assets/stars.png" alt="#" id="stars">
+        <img src="./assets/burjkhalifa.png" alt="#" id="bhurjkhalifa">
+        <img src="./assets/temples.png" alt="#" id="temple">
+        <img src="./assets/building.png" alt="#" id="building">
+        <img src="./assets/tajmahal.png" alt="#" id="tajmahal">
+        <img src="./assets/liberty.png" alt="#" id="liberty">
+        <img src="./assets/hoarding.png" alt="#" id="hoarding">
+        <img src="./assets/moon.png" alt="#" id="moon">
+        <video autoplay muted loop width="100%">
+            <source src="./assets/news video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img src="./assets/news text.png" alt="#" id="news-text">
+        <img src="./assets/India women dance.png" alt="#" id="woman">
+        <img src="./assets/abroad dance.png" alt="#" id="abroad-dance">
+        <img src="./assets/unity statue.png" alt="#" id="unity-statue">
+        <img src="./assets/punjabi dance.png" alt="#" id="punjabi">
+    </section>
+
+    <div class="sec">
+        <h1 class="heading-1">Global Updates</h1>
+        <h2 class="heading-2">your ultimate news destination....</h2>
+        <div class="hero-section">
+            <p>
+                Welcome to Global updates, where the adventure of knowledge begins! Dive in and discover a world of
+                news,
+                fun facts, and interesting stories about everything from science to sports. It's your starting point for
+                staying in the loop and exploring new ideas. So, come on in, take a look around, and let the journey
+                begin.
+                Here, you'll find everything from the latest headlines to in-depth features on topics like politics,
+                technology, and culture. It's your go-to spot for staying informed, entertained, and inspired. So, come
+                on
+                in, explore, and join us on this exciting journey of discovery!.
+            </p>
+            <img src="./assets/newshero.png" alt="news hero photo">
+        </div>
+    </div>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" id="news-img" alt="news image">
+            </div>
+
+            <div class="card-content">
+                <h3 style="font-weight: 500;" id="news-title">This is the title</h3>
+                <h5 class="news-source" id="news-source">End Gadget 28/03/2024</h5>
+                <p class="news-description" id="news-description">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Ipsum voluptatum a
+                    eaque vel ea atque, excepturi inventore ratione facere quae.</p>
+            </div>
+        </div>
+    </template>
+
+    <script type="module" src="main.js"></script>
+</body>
